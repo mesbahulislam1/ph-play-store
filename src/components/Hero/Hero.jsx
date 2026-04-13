@@ -1,5 +1,6 @@
 import PlayStoreImg from '../../assets/img/playstore.png'
 import AppleStoreImg from '../../assets/img/app-store.png'
+import { Link } from 'react-router';
 const Hero = () => {
   return (
     
@@ -14,8 +15,8 @@ const Hero = () => {
         <p className="text-[#627382] font-[20px]">At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br /> Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
 
         <div className='flex gap-2 justify-center items-center mt-7'>
-          <button className="font-semibold btn"><img src={PlayStoreImg} alt=""  className='w-[20px]'/>Google Play</button>
-          <button className="font-semibold btn"><img src={AppleStoreImg} alt=""  className='w-[20px]'/>App Store</button>
+          <Link to={'/apps'} className="font-semibold btn"><img src={PlayStoreImg} alt=""  className='w-[20px]'/>Google Play</Link>
+          <Link to={'/apps'} className="font-semibold btn"><img src={AppleStoreImg} alt=""  className='w-[20px]'/>App Store</Link>
         </div>
       </div>
   );
